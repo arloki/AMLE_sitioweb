@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #2C74B3;
+    background-color: #96B6C5;
 }
 
 .container {
@@ -68,7 +68,7 @@ body {
 }
 
 .menu-container .navbar ul li a:hover {
-    color: aqua;
+    color: #427D9D;
 }
 
 /*checkbox reponsive*/
@@ -297,7 +297,7 @@ body {
     color: #ffffff;
     margin-bottom: 25px;
     font-weight: 500;
-    border-bottom: 2px solid #00c5ff;
+    border-bottom: 2px solid #0383aa;
     padding-bottom: 10px;
     display: inline-block;
 }
@@ -330,7 +330,7 @@ body {
 }
 
 .iconos-footer a:hover {
-    background-color: #00c5ff;
+    background-color: #0383aa;
 }
 
 /*copyright*/
@@ -372,8 +372,13 @@ body {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: aqua;
+        background-color: #144272;
         display: none;
+    }
+
+    .menu-container .navbar ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
     }
 
     .menu-container .navbar ul li {

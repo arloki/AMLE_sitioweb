@@ -67,7 +67,7 @@ body {
 }
 
 .menu-container .navbar ul li a:hover {
-    color: aqua;
+    color: #427D9D;
 }
 
 /*checkbox reponsive*/
@@ -93,7 +93,7 @@ body {
     margin-left: 100px;
 
 }
-
+/*no es visible para la pagina principal*/
 /*titulo */
 .header-contenido-contanier h1 {
     font-size: 75px;
@@ -151,11 +151,14 @@ body {
 
 /*enlace*/
 .nosotros-content-container a {
-    color: rgb(128, 21, 21);
+    color: #144272;
+    font-weight: 700;
 }
 
 .nosotros-content-container a:hover {
     color: rgb(36, 44, 70);
+    border-bottom: 1px solid rgb(36, 44, 70);
+    border-top: 1px solid rgb(36, 44, 70);
 }
 
 /*fin*/
@@ -165,14 +168,17 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: rgb(222, 229, 235);
+    background: #0A2647;
 }
 
 /*titulo del catalogo*/
 .titulo-cata {
-    font-size: 47px;
+    color: #fff;
+    font-size: 70px;
     padding-top: 25px;
     text-transform: uppercase;
+    border-bottom: 2px solid #35A29F;
+    display: inline-block;
 }
 
 /*subcontenedor catalogo*/
@@ -312,14 +318,14 @@ body {
 /*boton o enlace*/
 .card a {
     display: inline-block;
-    background-color: rgb(17, 16, 16, 0.8);
+    background-color: rgb(14, 42, 72, 0.8);
     color: white;
     padding: 5px 20px;
     border-radius: 4px;
 }
 
 .card a:hover {
-    background-color: rgb(17, 16, 16);
+    background-color: rgb(14, 42, 72);
 }
 
 /*fin*/
@@ -371,7 +377,7 @@ body {
 
 /*linea decorativa*/
 hr {
-    border: 1px solid rgb(33, 185, 96);
+    border: 2px solid #005B41;
     width: 11%;
     margin-top: 5px;
     margin: 0px 30px;
@@ -405,7 +411,7 @@ hr {
   color: #ffffff;
   margin-bottom: 25px;
   font-weight: 500;
-  border-bottom: 2px solid #00c5ff;  
+  border-bottom: 2px solid #0383aa;  
   padding-bottom: 10px;
   display: inline-block;
 }
@@ -438,7 +444,7 @@ hr {
 }
 
 .iconos-footer a:hover{
-    background-color: #00c5ff;
+    background-color: #0383aa;
 }
 
 /*copyright*/
@@ -480,8 +486,12 @@ hr {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: aqua;
+        background-color: #144272;
         display: none;
+    }
+    .menu-container .navbar ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
     }
 
     .menu-container .navbar ul li {
