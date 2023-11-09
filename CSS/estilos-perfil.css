@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*header fondo*/
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/sol.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+/*contenedor de la barra de arriba*/
+.menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*nombre principal*/
+.logo {
+    margin-left: 10px;
+    color: aliceblue;
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*menu de navegacion*/
+.menu-container .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+/*menu de navegacion con el enlace*/
+.menu-container .navbar ul li a {
+    font-size: 16px;
+    padding: 20px;
+    color: aliceblue;
+    display: block;
+    font-weight: 600;
+}
+
+.menu-container .navbar ul li a:hover {
+    color: aqua;
+}
+
+/*checkbox reponsive*/
+#menu {
+    display: none;
+}
+
+/*checkbox respoonsive*/
+.menu-icono {
+    width: 25px;
+}
+
+/*checkbox responsive*/
+.menu-container label {
+    cursor: pointer;
+    display: none;
+}
+
+/*no es visible para la pagina principal*/
+/*contenedor del titulo*/
+.header-contenido-contanier {
+    margin-left: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*titulo */
+.header-contenido-contanier h1 {
+    font-size: 75px;
+    color: aliceblue;
+    line-height: 80px;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+/*fin*/
+
+
+
+
+
+
+/*para que sea responsive*/
+@media(max-width:991px) {
+
+    /*header,menu, y quienes somos*/
+    .menu-container {
+        padding: 20px;
+    }
+
+    .menu-container label {
+        display: initial;
+    }
+
+    .menu-container .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: aqua;
+        display: none;
+    }
+
+    .menu-container .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+
+    }
+
+}
+
+/*fin*/

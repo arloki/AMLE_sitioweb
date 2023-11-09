@@ -1,0 +1,124 @@
+ <!--footer-->
+  <footer class="footer">
+    <!--redes sociales-->
+    <div class="footer-conteiner">
+      <div class="social-media">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+      </div>
+      <!--fin-->
+
+      <!--menu de navegacion-footer-->
+      <div class="navbar-footer">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="perfil.html">Perfil</a></li>
+          <li><a href="#">Politicas</a></li>
+        </ul>
+      </div>
+      <!--fin-->
+
+    </div>
+    <!--fin-->
+
+    <!--copyright-->
+    <div class="footer-bottom">
+      <p>CopyRight &copy;2023; <span class="span-copy">AMLEMALL</span></p>
+    </div>
+    <!--fin-->
+  </footer>
+
+
+
+
+  css 
+  /*footer*/
+.footer {
+    background-color: rgb(10, 24, 87);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*contenedor principal*/
+.footer-conteiner {
+    width: 100%;
+    padding: 30px 30px 30px;
+}
+
+/*redes sociales*/
+.social-media {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*enlaces de las redes sociales*/
+.social-media a {
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+/*enlaces e iconos redes sociales*/
+.social-media a i {
+    font-size: 2rem;
+    color: black;
+    opacity: 0.9;
+}
+
+.social-media a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.social-media a i:hover {
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+/*barra de navegacion*/
+.navbar-footer {
+    margin: 30px 0;
+}
+
+.navbar-footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-footer ul li a {
+    color: #ffffff;
+    margin: 20px;
+    font-size: 17px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.navbar-footer ul li a:hover {
+    opacity: 1;
+
+}
+
+/*copyright*/
+.footer-bottom {
+    background-color: rgb(26, 29, 184);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #ffffff;
+}
+
+.span-copy {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/*fin*/
