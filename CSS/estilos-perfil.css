@@ -22,11 +22,11 @@ body {
 
 /*header fondo*/
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/datos/FOTO\ EDIFICIO.jpg);
+    background-image: linear-gradient(rgba(54, 48, 98, 0.7), rgba(54, 48, 98, 0.7)), url(/img/datos/FOTO\ EDIFICIO.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
 }
@@ -68,8 +68,9 @@ body {
 }
 
 .menu-container .navbar ul li a:hover {
-    color: #427D9D;
+    color: #739072;
 }
+
 
 /*checkbox reponsive*/
 #menu {
