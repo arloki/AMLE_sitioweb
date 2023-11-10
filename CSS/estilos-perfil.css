@@ -22,7 +22,7 @@ body {
 
 /*header fondo*/
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/sol.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/datos/FOTO\ EDIFICIO.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
