@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*header fondo*/
+.header {
+    background-image: linear-gradient(rgba(54, 48, 98, 0.7), rgba(54, 48, 98, 0.7)), url(/img/datos/FOTO\ EDIFICIO.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/*contenedor de la barra de arriba*/
+.menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*nombre principal*/
+.logo {
+    margin-left: 10px;
+    color: aliceblue;
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*menu de navegacion*/
+.menu-container .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+/*menu de navegacion con el enlace*/
+.menu-container .navbar ul li a {
+    font-size: 16px;
+    padding: 20px;
+    color: aliceblue;
+    display: block;
+    font-weight: 600;
+}
+
+.menu-container .navbar ul li a:hover {
+    color: #739072;
+}
+
+
+/*checkbox reponsive*/
+#menu {
+    display: none;
+}
+
+/*checkbox respoonsive*/
+.menu-icono {
+    width: 25px;
+}
+
+/*checkbox responsive*/
+.menu-container label {
+    cursor: pointer;
+    display: none;
+}
+
+/*no es visible para la pagina principal*/
+/*contenedor del titulo*/
+.header-contenido-contanier {
+    margin-left: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*titulo */
+.header-contenido-contanier h1 {
+    font-size: 100px;
+    color: aliceblue;
+    line-height: 90px;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 100px;
+    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    padding: 15px 0;
+    display: inline-block;
+}
+
+/*fin*/  
+
+/*vision mision y valores*/
+.container-general{
+    display: flex;
+}
+
+.general-1{
+    width: 50%;
+    padding: 50px 150px 50px 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.general-2{
+    background-image: url(/img/sol.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.general-3{
+    background-image: url(/img/sol.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+ .general-1 h2{
+    color: #0A2647;
+    font-size: 55px; 
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+.lista-valores  li{
+    margin-left: 30px;
+    list-style: disc;
+    margin-bottom: 5px;
+}
+/*fin*/
+
+
+/*footer*/
+.footer {
+    font-family: sans-serif;
+    text-transform: capitalize;
+    background-color: #24264B;
+    padding: 70px 0 0 0;
+
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #0383aa;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .1s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffffff;
+    padding-left: 6px;
+}
+
+.iconos-footer a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+
+}
+
+.iconos-footer a:hover {
+    background-color: #0383aa;
+}
+
+/*copyright*/
+.footer-bottom {
+    background-color: #1d1e36;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #ffffff;
+}
+
+.span-copy {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/*fin*/
+
+
+
+/*para que sea responsive el menu*/
+@media(max-width:991px) {
+
+    /*header y menu*/
+    .menu-container {
+        padding: 20px;
+    }
+
+    .menu-container label {
+        display: initial;
+    }
+
+    .menu-container .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #144272;
+        display: none;
+    }
+
+    .menu-container .navbar ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+    }
+
+    .menu-container .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+
+    }
+
+    /*titulo principal*/
+    .header-contenido-contanier {
+        margin-left: 0;
+    }
+
+    .header-contenido-contanier h1 {
+        font-size: 60px;
+    }
+
+    /*mision vision y valores*/ 
+    .container-general{
+        flex-direction: column;
+    }
+
+    .general-1{
+        width: 100%;
+        padding: 30px ;
+        text-align: center;
+    } 
+
+    .general-2 .general-3{
+        display: none;
+    }
+
+    /*fin*/
+
+
+
+    /*footer*/
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+    /*fin */
+
+}
