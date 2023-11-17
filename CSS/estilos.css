@@ -163,6 +163,45 @@ body {
 
 /*fin*/
 
+/*marcas q se venden*/
+.marcas{
+    display: flex;
+    padding: 80px 0;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.marca-1{
+    flex-basis: calc(33.3% - 20px);
+    padding: 10px 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.b2{
+    background-color:  #4F6F52;
+}
+
+.b3{
+    background-color: #ADC4CE;
+}
+
+.marca-txt{
+    flex-basis: 50%;
+}
+
+.marca-txt h4{
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.marca-img{
+    flex-basis: 50%;
+}
+/*fin*/
+
+
 /*catalogo*/
 .catalogo {
     text-align: center;
@@ -548,6 +587,19 @@ hr {
     hr {
         display: none;
     }
+
+    /*fin*/
+
+    /*marcas*/
+     .marcas{
+        padding: 20px;
+        flex-direction: column;
+     }
+
+     .marca-1{
+        margin-bottom: 15px;
+     }
+
 
     /*fin*/
 

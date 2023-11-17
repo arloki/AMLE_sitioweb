@@ -122,3 +122,54 @@
 }
 
 /*fin*/
+
+
+
+otra cosa
+
+<div class="marca-1 b2">
+      <div class="marca-txt">
+        <h4>Feiya</h4>
+      </div>
+      <div class="marca-img">
+        <img src="img/marca-3.png" alt="">
+      </div>
+    </div>
+
+
+
+
+    estilo de la otra cosa
+    /*marcas q se venden*/
+.marcas{
+    display: flex;
+    padding: 80px 0;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.marca-1{
+    flex-basis: calc(33.3% - 20px);
+    padding: 10px 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.b2{
+    background-color: #4F6F52;
+}
+
+.marca-txt{
+    flex-basis: 50%;
+}
+
+.marca-txt h4{
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.marca-img{
+    flex-basis: 50%;
+}
+/*fin*/
