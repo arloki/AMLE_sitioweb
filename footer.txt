@@ -123,9 +123,9 @@
 
 /*fin*/
 
+------------------------------------------------------------------------------------------------------------------
 
-
-otra cosa
+otra cosa marca
 
 <div class="marca-1 b2">
       <div class="marca-txt">
@@ -173,3 +173,80 @@ otra cosa
     flex-basis: 50%;
 }
 /*fin*/
+
+---------------------------------------------------------------------------------------------------------------
+sobre Nosotros
+ <section class="nosotros">
+
+    <div class="nosotros-content-container">
+
+      <img class="back-2" src="img/points-blue.svg" alt="">
+      <img class="back-3" src="img/waves-blue.svg" alt="">
+
+      <h2>Quienes Somos</h2>
+
+      <p class="txt">En la actualidad, AMLE continua con la confección de uniformes escolares e institucionales,
+        productos para bebes y es el líder en ventas de maquinarias y componentes para la industria textil en República
+        Dominicana.</p>
+      <a href="perfil.html" class="btn-1">Leer más</a>
+    </div>
+  </section>
+
+  css de eso 
+/*contenedor principal*/
+.nosotros {
+    padding: 40px 0;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+/*contenedor 2*/
+.nosotros-content-container {
+    text-align: center;
+}
+
+/*titulo*/
+.nosotros-content-container h2 {
+    font-size: 47px;
+    line-height: 70px;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+/*vectores de fondo*/
+.back-2 {
+    width: 100px;
+    right: 300px;
+    position: absolute;
+}
+
+.back-3 {
+    width: 100px;
+    right: 900px;
+    bottom: 20px;
+    position: absolute;
+}
+
+.txt {
+    font-size: 16px;
+    padding: 0 250px;
+    margin-bottom: 20px;
+}
+
+/*enlace*/
+.nosotros-content-container a {
+    color: rgba(79, 111, 82, 0.8);
+    font-weight: 700;
+}
+
+.nosotros-content-container a:hover {
+    color: #4F6F52;
+    border-bottom: 1px solid #4F6F52;
+    border-top: 1px solid #4F6F52;
+}
+
+/*fin*/
+
+
+  -------------------------------------------------------------------------------------------------------------

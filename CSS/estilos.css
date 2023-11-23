@@ -108,59 +108,42 @@ body {
 
 
 /*quienes somos*/
-/*contenedor principal*/
-.nosotros {
-    padding: 40px 0;
+.container-general{
+    display: flex;
+}
+
+.general-1{
+    width: 50%;
+    padding: 50px 150px 50px 50px;
     background-color: rgb(255, 255, 255);
-    position: relative;
 }
 
-/*contenedor 2*/
-.nosotros-content-container {
-    text-align: center;
+.general-2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/fondo2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
 }
 
-/*titulo*/
-.nosotros-content-container h2 {
-    font-size: 47px;
+ .general-1 h2{
+    color: #0A2647;
+    font-size: 50px; 
     line-height: 70px;
     text-transform: uppercase;
-    padding: 0 250px;
-    margin-bottom: 15px;
-}
-
-/*vectores de fondo*/
-.back-2 {
-    width: 100px;
-    right: 300px;
-    position: absolute;
-}
-
-.back-3 {
-    width: 100px;
-    right: 900px;
-    bottom: 20px;
-    position: absolute;
-}
-
-.txt {
-    font-size: 16px;
-    padding: 0 250px;
     margin-bottom: 20px;
 }
 
 /*enlace*/
-.nosotros-content-container a {
+.general-1 a {
+    margin-top: 10px;
     color: rgba(79, 111, 82, 0.8);
     font-weight: 700;
 }
 
-.nosotros-content-container a:hover {
+.general-1 a:hover {
     color: #4F6F52;
-    border-bottom: 1px solid #4F6F52;
-    border-top: 1px solid #4F6F52;
 }
-
 /*fin*/
 
 /*marcas q se venden*/
