@@ -526,26 +526,21 @@ hr {
     }
 
     /*nosotros*/
-    .nosotros {
-        padding: 30px;
-
+     .container-general{
+        flex-direction: column;
     }
 
-    .nosotros-content-container h2 {
-        padding: 0;
-    }
+    .general-1{
+        width: 100%;
+        padding: 30px ;
+        text-align: center;
+    } 
 
-    .txt {
-        padding: 0;
-    }
-
-    .back-2 {
+    .general-2 .general-3{
         display: none;
     }
 
-    .back-3 {
-        display: none;
-    }
+ 
 
     /*fin*/
 
