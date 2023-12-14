@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--link del favicon -->
     <link rel="icon" href="/img/amle_logo2.jpeg" type="image/x-icon">
+    <!--link del slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!--link del fontawesome-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
@@ -31,7 +33,7 @@
             </div>
         </aside>
         <!--fin-->
-  
+
         <!--header-->
         <!--header top-->
         <header>
@@ -76,7 +78,7 @@
             <div class="header-nav">
                 <div class="container-tienda">
                     <div class="wrapper flexitem">
-                        <a href="" class="trigger desktop-hide"><i class='bx bx-menu'></i></a>
+                        <a href="#" class="trigger desktop-hide"><i class='bx bx-menu'></i></a>
                         <div class="left flexitem"></div>
                         <div class="logo"><a href="#">AMLE</a></div>
                         <nav class="mobile-hide">
@@ -134,7 +136,7 @@
                                 </div>
 
                                 <!--barra de categorias-->
-                                   <div class="dpto-menu">
+                                <div class="dpto-menu">
                                     <ul class="second-links">
 
                                         <li class="has-child partes">
@@ -237,9 +239,9 @@
                                                 <li><a href="#">Prendas de salud</a></li>
                                             </ul>
                                         </li>
-                                        
+
                                     </ul>
-                                   </div>
+                                </div>
                                 <!--fin-->
                             </div>
                         </div>
@@ -263,7 +265,63 @@
 
         <!--main-->
         <main>
+            <!--slider-->
+            <div class="slider">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="myslider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item">
 
+                                        <div class="image object-cover">
+                                            <img src="img-tienda/slider2.5.jpg" alt="">
+                                        </div>
+                                        <div class="text-context flexcol">
+                                            <h4>Hilos AMLE</h4>
+                                            <h2><span>Hilos de calidad </span> <br> <span>con nuestros hilos</span></h2>
+                                            <a href="#" class="primary-button">Compra ahora</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="item">
+
+                                        <div class="image object-cover">
+                                            <img src="img-tienda/slider3.5.jpg" alt="">
+                                        </div>
+                                        <div class="text-context flexcol">
+                                            <h4>accesorios</h4>
+                                            <h2><span>Crea con confianza</span> <br> <span>con nuestros accesorios</span></h2>
+                                            <a href="#" class="primary-button">Compra ahora</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="item">
+
+                                        <div class="image object-cover">
+                                            <img src="img-tienda/slider4.jpg" alt="">
+                                        </div>
+                                        <div class="text-context flexcol">
+                                            <h4>Tijeras</h4>
+                                            <h2><span>Versatilidad y durabilidad </span> <br> <span>en cada corte</span></h2>
+                                            <a href="#" class="primary-button">Compra ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--fin-->
         </main>
         <!--fin-->
 
@@ -274,7 +332,11 @@
         <!--fin-->
     </div>
 
+    <!--js del slider-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--js del boxicons-->
     <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+    <!--js de la pagina-->
     <script src="js/script-tienda.js"></script>
 </body>
 

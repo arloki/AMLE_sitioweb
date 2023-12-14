@@ -48,3 +48,13 @@ function toggle(e) {
     if (this.closest('.has-child').classList != 'expand');
     this.closest('.has-child').classList.toggle('expand');
 }
+
+//slider
+const swiper = new Swiper('.swiper', {
+    
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+  });

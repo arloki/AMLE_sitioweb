@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #ff6b6b;
+    --primary-color: #78ac7e;
     --second-color: #794afa;
-    --second-dark-color: #453c5c;
+    --second-dark-color: #0A2647;
 
     --white-color: #ffff;
     --light-bg-color: #f2f3f5;
@@ -178,6 +178,21 @@ h4 {
 .mini-text {
     font-size: var(--font-smaller);
     color: var(--light-text-color);
+}
+
+.primary-button {
+   font-size: var(--font-small);
+   padding: 0.9em 2em;
+   height: auto;
+   width: fit-content;
+   border-radius: 2em;
+   transition: var(--trans-background-color);
+   background-color: var(--primary-color);
+   color: var(--white-color);
+    
+}
+.primary-button:hover {
+    background-color: #587a5c;
 }
 
 /*fin*/
@@ -520,6 +535,70 @@ form.search button:hover {
 /*fin-header*/
 
 
+/*slider*/
+.slider>div>.wrapper {
+    width: calc(100% - (300px + 2em));
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.slider .item {
+    position: relative;
+    height: 474px;
+}
+
+/*.slider .item::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 430px;
+    height: 300px;
+    background-color: var(--white-color);
+    z-index: 1;
+    filter: blur(50px);
+    opacity: .8;
+}*/
+
+.slider .text-context {
+    position: relative;
+    height: var(--porcentaje100);
+    /*justify-content: flex-end;*/
+    padding: 0 0 10% 36%;
+    z-index: 1;
+    top: -350px;
+    right: 250px;
+}
+
+.slider h4 {
+    font-size: var(--font-small);
+    font-weight: var(--fw7);
+    width: fit-content;
+    padding: 4px 30px;
+    background-color: var(--second-dark-color);
+    color: var(--white-color);
+    border-radius: 4px;
+}
+
+.text-context :where(h2,h3) span:first-child {
+    font-weight: var(--fw3);
+    columns: var(--light-text-color);
+
+}
+
+.text-context :where(h2,h3) span:last-child {
+ color: var(--second-dark-color);
+ text-transform: uppercase;
+ letter-spacing: -1px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--second-dark-color);
+}
+
+/*fin-slider*/
+
+
 /*responsive*/
 @media screen and (min-width: 992px) {
     .container-tienda {
@@ -586,6 +665,13 @@ form.search button:hover {
     /*ensenando el sub-menu*/
     .dpto-menu .has-child {
         display: block;
+    }
+
+    /*slider*/
+    .slider>div>.wrapper {
+        width: calc(100% - (300px + 2em));
+        margin-left: auto;
+        margin-right: 10px;
     }
 
     /*fin*/
