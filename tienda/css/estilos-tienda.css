@@ -181,16 +181,17 @@ h4 {
 }
 
 .primary-button {
-   font-size: var(--font-small);
-   padding: 0.9em 2em;
-   height: auto;
-   width: fit-content;
-   border-radius: 2em;
-   transition: var(--trans-background-color);
-   background-color: var(--primary-color);
-   color: var(--white-color);
-    
+    font-size: var(--font-small);
+    padding: 0.9em 2em;
+    height: auto;
+    width: fit-content;
+    border-radius: 2em;
+    transition: var(--trans-background-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
 }
+
 .primary-button:hover {
     background-color: #587a5c;
 }
@@ -350,6 +351,14 @@ nav .fly-item {
 
 .dpto-menu .has-child:hover ul {
     display: block;
+}
+
+.dpto-menu .partes ul,
+.maquinas ul,
+.prod ul,
+.Prendas ul,
+.equipos ul {
+    background-image: url(/tienda/img-tienda/bck-white..jpg);
 }
 
 .dpto-menu .has-child li a:hover {
@@ -536,11 +545,6 @@ form.search button:hover {
 
 
 /*slider*/
-.slider>div>.wrapper {
-    width: calc(100% - (300px + 2em));
-    margin-left: auto;
-    margin-right: 10px;
-}
 
 .slider .item {
     position: relative;
@@ -570,30 +574,16 @@ form.search button:hover {
     right: 250px;
 }
 
-.slider h4 {
-    font-size: var(--font-small);
-    font-weight: var(--fw7);
-    width: fit-content;
-    padding: 4px 30px;
-    background-color: var(--second-dark-color);
-    color: var(--white-color);
-    border-radius: 4px;
-}
-
-.text-context :where(h2,h3) span:first-child {
+.text-context :where(h2, h3) span:first-child {
     font-weight: var(--fw3);
     columns: var(--light-text-color);
 
 }
 
-.text-context :where(h2,h3) span:last-child {
- color: var(--second-dark-color);
- text-transform: uppercase;
- letter-spacing: -1px;
-}
-
-.swiper-pagination .swiper-pagination-bullet-active {
-    background-color: var(--second-dark-color);
+.text-context :where(h2, h3) span:last-child {
+    color: var(--second-dark-color);
+    text-transform: uppercase;
+    letter-spacing: -1px;
 }
 
 /*fin-slider*/
@@ -683,6 +673,64 @@ form.search button:hover {
     .header-top {
         display: none;
     }
+
+    /*texto del slider*/
+    .slider .text-context {
+        position: relative;
+        height: var(--porcentaje100);
+        /*justify-content: flex-end;*/
+        padding: 0 0 10% 36%;
+        z-index: 1;
+        top: -350px;
+        right: 250px;
+        margin-left: 20px;
+    }
+
+    .text-context :where(h2, h3) span:first-child {
+        font-size: 20px;
+        font-weight: var(--fw3);
+        columns: var(--light-text-color);
+
+    }
+
+    .text-context :where(h2, h3) span:last-child {
+        color: var(--second-dark-color);
+        text-transform: uppercase;
+        letter-spacing: -1px;
+    }
 }
+
+/*para que se vea el texto del slider*/
+@media screen and (max-width: 655px) {
+
+    /*texto del slider*/
+    .slider .text-context {
+    top: -250px;
+    right: 170px;
+    }
+
+    .text-context :where(h2, h3) span:first-child {
+        font-size: 30px;
+        font-weight: var(--fw3);
+        columns: var(--light-text-color);
+    
+    }
+    
+    .text-context :where(h2, h3) span:last-child {
+        font-size: 50px;
+    }
+
+    .text-context .primary-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 416px) {
+
+    .slider .text-context {
+       display: none;
+        }
+}
+
 
 /*fin*/
