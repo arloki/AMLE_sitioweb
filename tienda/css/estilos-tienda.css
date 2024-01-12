@@ -588,6 +588,94 @@ form.search button:hover {
 
 /*fin-slider*/
 
+/*productos cascada*/
+
+
+/*fin/
+
+/*footer*/
+.footer{
+    margin-top: 15px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    background-color: #24264B;
+    padding: 70px 0 0 0;
+
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 15px ;
+}
+
+.footer-links h4{
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #0383aa;  
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.footer-links ul li a{
+    font-size: 18px;
+    color: #bbbbbb; 
+    display: block;
+    margin-bottom: 15px;
+    transition: all .1s ease;
+}
+
+.footer-links ul li a:hover{
+    color: #ffffff;
+    padding-left: 6px; 
+}
+
+.iconos-footer a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255,  0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+ 
+}
+
+.iconos-footer a:hover{
+    background-color: #0383aa;
+}
+
+/*copyright*/
+.footer-bottom {
+    background-color: #1d1e36;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #ffffff;
+}
+
+.span-copy {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/*fin*/
+
 
 /*responsive*/
 @media screen and (min-width: 992px) {
@@ -698,6 +786,19 @@ form.search button:hover {
         text-transform: uppercase;
         letter-spacing: -1px;
     }
+
+     /*footer*/ 
+     .footer-row{
+        text-align: center;
+     }
+
+     .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+     }
+
+
+    /*fin */
 }
 
 /*para que se vea el texto del slider*/

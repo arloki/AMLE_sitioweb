@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>galeria de productos</title>
+</head>
+
+<body>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: inherit;
+        }
+
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: black;
+            font-size: 1.6em;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 400;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 114rem;
+            margin: 0 auto;
+            padding: 0 1.6em;
+        }
+
+        /*producto*/
+        .productos {
+            padding: 5em 0;
+        }
+
+        .producto_center {
+            padding: 0 3em;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* Se crean 4 columnas, cada una con igual fracción del espacio disponible */
+            gap: 10px;
+        }
+
+        .producto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .2);
+        }
+
+        .img_container img {
+            width: 310px;
+        }
+
+        .producto_footer {
+            padding: 1em;
+            width: 100%;
+
+        }
+
+        .producto_footer h2 {
+            /*height: 28px;*/
+            overflow: hidden;
+            font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2em 0;
+        }
+
+        .btn {
+            display: inline-block;
+            border: 1px solid #e5e8ec;
+            padding: 1em 1.8em;
+            color: #0a021c;
+            font-weight: 500;
+            font-size: 13px;
+            transition: all 300ms ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #78ac7e;
+            color: white;
+        }
+
+        .filter {
+            padding: 0 2rem;
+            width: 100%;
+            margin: 13em auto 0 auto;
+        }
+
+        .filter-grid {
+            display: grid;
+            grid-template-columns: 0.5fr;
+            grid-row-gap: 5px; 
+        }
+
+
+
+        @media only screen and (max-width: 1200px) {
+            .container {
+                padding: 0 3em;
+            }
+
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 0 5em;
+            }
+
+        }
+
+        @media(max-width:991px) {
+            .producto_center {
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .producto_center {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 10px;
+            }
+        }
+    </style>
+
+    <!--filtro busqueda-->
+    <section class="filter">
+        <div class="grid">
+            <div class="div">
+                <label for="buscar"><span><i class="bx bx-search"></i></span></label>
+                <input type="text" id="buscar" placeholder="buscar">
+            </div>
+            <div class="category">
+                <select id="category">
+                    <option value="maquina">maquina</option>
+                    <option value="hilo">hilo</option>
+                    <option value="tela">tela</option>
+                    <option value="aguja">aguja</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos">
+        <div class="producto_center">
+            <div class="producto">
+                <div class="img_container">
+                    <img src="img-tienda/productos/maquina-jack.png" alt="">
+                </div>
+                <div class="producto_footer">
+                    <h2>Maquina-Jack</h2>
+                </div>
+                <div class="button">
+                    <div class="button_group">
+                        <a href="#" class="btn addToCart">Add to cart</a>
+                        <a href="#" class="btn view"> Vista</a>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="img_container">
+                    <img src="img-tienda/productos/maquina-jack.png" alt="">
+                </div>
+                <div class="producto_footer">
+                    <h2>Maquina-Jack</h2>
+                </div>
+                <div class="button">
+                    <div class="button_group">
+                        <a href="#" class="btn addToCart">Add to cart</a>
+                        <a href="#" class="btn view"> Vista</a>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="img_container">
+                    <img src="img-tienda/productos/maquina-jack.png" alt="">
+                </div>
+                <div class="producto_footer">
+                    <h2>Maquina-Jack</h2>
+                </div>
+                <div class="button">
+                    <div class="button_group">
+                        <a href="#" class="btn addToCart">Add to cart</a>
+                        <a href="#" class="btn view"> Vista</a>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="img_container">
+                    <img src="img-tienda/productos/maquina-jack.png" alt="">
+                </div>
+                <div class="producto_footer">
+                    <h2>Maquina-Jack</h2>
+                </div>
+                <div class="button">
+                    <div class="button_group">
+                        <a href="#" class="btn addToCart">Add to cart</a>
+                        <a href="#" class="btn view"> Vista</a>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="img_container">
+                    <img src="img-tienda/productos/maquina-jack.png" alt="">
+                </div>
+                <div class="producto_footer">
+                    <h2>Maquina-Jack</h2>
+                </div>
+                <div class="button">
+                    <div class="button_group">
+                        <a href="#" class="btn addToCart">Add to cart</a>
+                        <a href="#" class="btn view"> Vista</a>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="img_container">
+                    <img src="img-tienda/productos/maquina-jack.png" alt="">
+                </div>
+                <div class="producto_footer">
+                    <h2>Maquina-Jack</h2>
+                </div>
+                <div class="button">
+                    <div class="button_group">
+                        <a href="#" class="btn addToCart">Add to cart</a>
+                        <a href="#" class="btn view"> Vista</a>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="img_container">
+                    <img src="img-tienda/productos/maquina-jack.png" alt="">
+                </div>
+                <div class="producto_footer">
+                    <h2>Maquina-Jack</h2>
+                </div>
+                <div class="button">
+                    <div class="button_group">
+                        <a href="#" class="btn addToCart">Add to cart</a>
+                        <a href="#" class="btn view"> Vista</a>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="img_container">
+                    <img src="img-tienda/productos/maquina-jack.png" alt="">
+                </div>
+                <div class="producto_footer">
+                    <h2>Maquina-Jack</h2>
+                </div>
+                <div class="button">
+                    <div class="button_group">
+                        <a href="#" class="btn addToCart">Add to cart</a>
+                        <a href="#" class="btn view"> Vista</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
