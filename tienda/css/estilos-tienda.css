@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/*estilos de la single page*/
+@import url('estilos-singlepage.css');
 
 :root {
     --primary-color: #78ac7e;
@@ -7,7 +9,7 @@
 
     --white-color: #ffff;
     --light-bg-color: #f2f3f5;
-    --light-text-color: #7c8999a;
+    --light-text-color: #A8A196;
     --border-color: #e5e8ec;
     --dark-color: #0a021c;
 
@@ -307,6 +309,16 @@ nav .fly-item {
 
 /*fin*/
 
+/*para que el coso del menu no se vea*/
+.page-home .dpt-cat .dtp-trigger,
+.dtp-trigger .ri-close-fill,
+.showdpt .dtp-trigger .bx-menu-alt-left {
+    display: none;
+}
+
+.showdpt .dtp-trigger .ri-close-fill {
+    display: block;
+}
 
 /*header principal*/
 .header-main {
@@ -318,6 +330,7 @@ nav .fly-item {
 .dpt-cat {
     position: relative;
     z-index: 10;
+    margin-left: 1em;
 }
 
 .dpt-cat .dpt-head {
@@ -541,6 +554,7 @@ form.search button:hover {
 
 /*fin-menu-responsive*/
 
+
 /*fin-header*/
 
 
@@ -551,50 +565,137 @@ form.search button:hover {
     height: 474px;
 }
 
-/*.slider .item::before {
-    content: '';
-    position: absolute;
-    top: 30%;
-    left: 0;
-    width: 430px;
-    height: 300px;
-    background-color: var(--white-color);
-    z-index: 1;
-    filter: blur(50px);
-    opacity: .8;
-}*/
-
-.slider .text-context {
-    position: relative;
-    height: var(--porcentaje100);
-    /*justify-content: flex-end;*/
-    padding: 0 0 10% 36%;
-    z-index: 1;
-    top: -350px;
-    right: 250px;
-}
-
-.text-context :where(h2, h3) span:first-child {
-    font-weight: var(--fw3);
-    columns: var(--light-text-color);
-
-}
-
-.text-context :where(h2, h3) span:last-child {
-    color: var(--second-dark-color);
-    text-transform: uppercase;
-    letter-spacing: -1px;
-}
-
 /*fin-slider*/
+
+/*titulos*/
+.sectop {
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid var(--border-color);
+    margin-left: 2em;
+}
+
+.sectop h2 {
+    position: relative;
+    font-size: 35px;
+    font-weight: var(--fw7);
+}
+
+/*fin*/
 
 /*productos cascada*/
 
+.productos {
+    padding: 5em 0;
+}
+
+.producto_center {
+    padding: 0 3em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* Se crean 4 columnas, cada una con igual fracción del espacio disponible */
+    gap: 10px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .2);
+}
+
+.img_container img {
+    width: 310px;
+}
+
+.producto_footer {
+    padding: 1em;
+    width: 100%;
+
+}
+
+.producto_footer h2 {
+    /*height: 28px;*/
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid #e5e8ec;
+    padding: 1em 1.2em;
+    color: #0a021c;
+    font-weight: 500;
+    font-size: 12px;
+    transition: all 300ms ease-in-out;
+}
+
+.btn:hover {
+    background-color: #78ac7e;
+    color: white;
+}*/
 
 /*fin/
 
+/*banners*/
+.banner {
+    margin: 0 100px 30px;
+}
+
+.banners .item {
+    position: relative;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+}
+
+.banner .img {
+    text-align: right;
+}
+
+.banner .get-gray {
+    background-color: var(--border-color);
+}
+
+.banner :where(.text-content, .over-link) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--porcentaje100);
+    height: var(--porcentaje100);
+}
+
+.banner .text-content {
+    padding: 1.5em 2.5em;
+}
+
+.banner h3 {
+    font-size: calc(1em+0.5vw);
+    font-weight: var(--fw3);
+}
+
+.banner h3 span {
+    font-size: 80%;
+}
+
+.banner h4 {
+    font-size: 20px;
+}
+
+/*fin*/
+
 /*footer*/
-.footer{
+.footer {
     margin-top: 15px;
     font-family: sans-serif;
     text-transform: capitalize;
@@ -603,55 +704,55 @@ form.search button:hover {
 
 }
 
-.footer-row{
+.footer-row {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
 }
 
-.footer-links{
+.footer-links {
     width: 25%;
-    padding: 0 15px ;
+    padding: 0 15px;
 }
 
-.footer-links h4{
-  font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 25px;
-  font-weight: 500;
-  border-bottom: 2px solid #0383aa;  
-  padding-bottom: 10px;
-  display: inline-block;
+.footer-links h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #0383aa;
+    padding-bottom: 10px;
+    display: inline-block;
 }
 
-.footer-links ul li a{
+.footer-links ul li a {
     font-size: 18px;
-    color: #bbbbbb; 
+    color: #bbbbbb;
     display: block;
     margin-bottom: 15px;
     transition: all .1s ease;
 }
 
-.footer-links ul li a:hover{
+.footer-links ul li a:hover {
     color: #ffffff;
-    padding-left: 6px; 
+    padding-left: 6px;
 }
 
-.iconos-footer a{
+.iconos-footer a {
     display: inline-block;
     min-height: 40px;
     width: 40px;
-    background-color: rgba(255, 255, 255,  0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
     color: #ffffff;
     transition: all .5s ease;
- 
+
 }
 
-.iconos-footer a:hover{
+.iconos-footer a:hover {
     background-color: #0383aa;
 }
 
@@ -752,6 +853,21 @@ form.search button:hover {
         margin-right: 10px;
     }
 
+    /*page single*/
+
+    #page:not(.page-home) .dpto-menu {
+        display: none;
+    }
+
+    #page.showdpt .dpto-menu {
+        display: block;
+    }
+
+    /* para q el banner se acomode banner*/
+    .banners {
+        display: flex;
+    }
+
     /*fin*/
 }
 
@@ -762,75 +878,76 @@ form.search button:hover {
         display: none;
     }
 
-    /*texto del slider*/
-    .slider .text-context {
-        position: relative;
-        height: var(--porcentaje100);
-        /*justify-content: flex-end;*/
-        padding: 0 0 10% 36%;
-        z-index: 1;
-        top: -350px;
-        right: 250px;
-        margin-left: 20px;
-    }
-
-    .text-context :where(h2, h3) span:first-child {
-        font-size: 20px;
-        font-weight: var(--fw3);
-        columns: var(--light-text-color);
-
-    }
-
-    .text-context :where(h2, h3) span:last-child {
-        color: var(--second-dark-color);
-        text-transform: uppercase;
-        letter-spacing: -1px;
-    }
-
-     /*footer*/ 
-     .footer-row{
+    /*footer*/
+    .footer-row {
         text-align: center;
-     }
+    }
 
-     .footer-links{
+    .footer-links {
         width: 100%;
         margin-bottom: 30px;
-     }
+    }
+
+    .banner {
+        display: none;
+    }
 
 
     /*fin */
 }
 
-/*para que se vea el texto del slider*/
-@media screen and (max-width: 655px) {
 
-    /*texto del slider*/
-    .slider .text-context {
-    top: -250px;
-    right: 170px;
+/*para que se acomode los productos*/
+@media only screen and (max-width: 1200px) {
+    .container {
+        padding: 0 3em;
     }
 
-    .text-context :where(h2, h3) span:first-child {
-        font-size: 30px;
-        font-weight: var(--fw3);
-        columns: var(--light-text-color);
-    
-    }
-    
-    .text-context :where(h2, h3) span:last-child {
-        font-size: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0 5em;
     }
 
-    .text-context .primary-button {
-        display: none;
+}
+
+@media(max-width:991px) {
+    .producto_center {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .producto_center {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    /*para que el banner se acomode*/
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner .row {
+        margin-bottom: 1em;
     }
 }
 
-@media screen and (max-width: 416px) {
+/*fin*/
 
-    .slider .text-context {
-       display: none;
-        }
+/*para acomodar el banner*/
+@media screen and (min-width: 768px) {
+    .banner .row {
+        flex: 0 0 50%;
+    }
+
 }
 
 

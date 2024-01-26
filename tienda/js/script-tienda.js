@@ -13,9 +13,9 @@ function copyMenu() {
     navPlace.innerHTML = mainNav.innerHTML;
 
     // copy .header-top .wrapper to thetop-nav
-    var topNav = document.querySelector('.header-top .wrapper');
-    var topPlace = document.querySelector('.off-canva .thetop-nav');
-    topPlace.innerHTML = topNav.innerHTML;
+    //var topNav = document.querySelector('.header-top .wrapper');
+    // var topPlace = document.querySelector('.off-canva .thetop-nav');
+    //topPlace.innerHTML = topNav.innerHTML;
 }
 
 copyMenu();
@@ -48,3 +48,41 @@ function toggle(e) {
     if (this.closest('.has-child').classList != 'expand');
     this.closest('.has-child').classList.toggle('expand');
 }
+
+
+// Show dpt menu 
+const dptButton = document.querySelector('.dpt-cat .dtp-trigger');
+const dptClass = document.querySelector('.site');
+
+dptButton.addEventListener('click', function () {
+    dptClass.classList.toggle('showdpt');
+});
+
+
+//image product slider
+var productThumb = new Swiper('.small-image', {
+    loop: true,
+    spaceBetween: 10,
+    sliderPerView: 3,
+    freeMode: true,
+    watchSliderProgress: true,
+    breakpoints: {
+        481: {
+            spaceBetween: 32,
+        }
+    }
+
+});
+
+var productBig = new Swiper('.big-image', {
+    loop: true,
+    autoHeight: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+        swiper: productThumb,
+    }
+
+});
