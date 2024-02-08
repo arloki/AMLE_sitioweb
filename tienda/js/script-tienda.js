@@ -63,15 +63,14 @@ dptButton.addEventListener('click', function () {
 var productThumb = new Swiper('.small-image', {
     loop: true,
     spaceBetween: 10,
-    sliderPerView: 3,
+    slidesPerView: 3, 
     freeMode: true,
-    watchSliderProgress: true,
+    watchSlidesProgress: true, 
     breakpoints: {
         481: {
             spaceBetween: 32,
         }
     }
-
 });
 
 var productBig = new Swiper('.big-image', {
@@ -84,5 +83,4 @@ var productBig = new Swiper('.big-image', {
     thumbs: {
         swiper: productThumb,
     }
-
 });

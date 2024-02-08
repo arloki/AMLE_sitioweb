@@ -1,5 +1,4 @@
-
-/*breadcrumb*/
+/*breadcrumb linea de arriba*/
 .breadcrumb {
     font-size: var(--font-small);
     margin-bottom: 2em;
@@ -19,7 +18,99 @@
 }
 
 /*productos detalle img*/
- .single-product {
+.single-product {
     margin-left: 2em;
 }
 
+.products.one .item {
+    flex-direction: column;
+}
+
+.products.one :where(.big-image, .small-image) {
+    overflow: hidden;
+}
+
+.products.one .big-image {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.products.one :where(.big-image, .small-image) img {
+    object-fit: cover;
+    width: var(--porcentaje100);
+    height: var(--porcentaje100);
+    display: block;
+}
+
+/*imagen pequena*/
+.products.one .thumbnail-show {
+    position: relative;
+    width: 130px;
+    height: 110px;
+    overflow: hidden;
+    margin: 0 2em 2em 0;
+}
+
+.products.one .small-image {
+    display: flex;
+}
+
+/*flecha del slider de imagenes*/
+.products :is(.swiper-button-next, .swiper-button-prev) {
+    outline: 0;
+    color: black;
+    transition: var(--trans-color), transform .3s;
+}
+
+.products .big-image:hover .swiper-button-next {
+    transform: translateX(10px);
+}
+
+.products .big-image:hover .swiper-button-prev {
+    transform: translateX(-10px);
+}
+
+.products :is(.swiper-button-next, .swiper-button-prev)::after {
+    font-size: 1.3em;
+
+}
+
+.products .big-image:hover :is(.swiper-button-next, .swiper-button-prev) {
+    background-color: var(--light-bg-color);
+}
+
+/*resenas estrellas*/
+.products .raiting {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.products .raiting .stars {
+    width: 80px;
+    height: 15px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16' fill='rgba(240,187,64,1)'%3E%3Cpath d='M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z'%3E%3C/path%3E%3C/svg%3E");
+    background-position-y: top;
+}
+
+/*lightbox no se que es*/
+
+
+/*medias responsive*/
+@media(min-width:481px) {
+    .products.one .big-image {
+        margin-bottom: 2em;
+    }
+
+    /*.products.one .image-show {
+        height: 680px;
+    }*/
+
+    /*.products.one .thumbnail-show {
+        height: 160px;
+
+    }*/
+
+}
+
+/*fin*/
