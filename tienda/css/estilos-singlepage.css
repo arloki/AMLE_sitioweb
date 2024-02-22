@@ -71,7 +71,7 @@
 }
 
 .products :is(.swiper-button-next, .swiper-button-prev)::after {
-    font-size: 1.3em;
+    font-size: 1.5em;
 
 }
 
@@ -93,7 +93,228 @@
     background-position-y: top;
 }
 
-/*lightbox no se que es*/
+/*precio*/
+.products .price .current {
+    font-size: calc(1em+1vw);
+    color: #FF6868;
+    margin-right: 0.25em;
+}
+
+.products .price .normal {
+    color: var(--light-text-color);
+    text-decoration: line-through;
+    font-size: var(--font-smaller);
+}
+
+/*pa q se despegue */
+
+.raiting,
+.stock-skun,
+.colors,
+.sizes {
+    margin: .5em 0;
+}
+
+/*contenido inf*/
+.products.one .avialable {
+    font-size: var(--font-small);
+    font-weight: var(--fw5);
+    padding: 0.5em;
+    margin-right: 1em;
+    border-radius: 5px;
+    color: darkcyan;
+    background-color: var(--light-bg-color);
+}
+
+/*resena*/
+.products.one .add-rewind {
+    color: var(--second-dark-color);
+}
+
+/*precio*/
+.products.one .price {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.products.one .price .current {
+    font-size: 2em;
+}
+
+/*forms*/
+.products .variant form {
+    display: flex;
+    margin-top: 0.5em;
+}
+
+.products .variant form p {
+    position: relative;
+    margin: 0 0.5em 0.5em;
+}
+
+/*circulos del color y size*/
+.products :where(.variant, .actions) .circle {
+    display: block;
+    position: static;
+    top: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.products .variant input {
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+
+.products .variant label::before {
+    opacity: 1;
+}
+
+/*para cambiar el color*/
+.products .variant label[for="codgrey"]::before {
+    background-color: cornflowerblue;
+}
+
+/*para cambiar el color*/
+.products .variant label[for="codblue"]::before {
+    background-color: crimson;
+}
+
+/*para cambiar el color*/
+.products .variant label[for="codpink"]::before {
+    background-color: rgb(34, 172, 114);
+}
+
+.single-product .variant form p input:checked+label {
+    background-color: transparent;
+    border: 2px solid var(--second-dark-color);
+    color: var(--white-color);
+}
+
+/*sizes*/
+.products .sizes .variant label::before {
+    background-color: var(--white-color);
+}
+
+.products .sizes .variant label span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--porcentaje100);
+    height: var(--porcentaje100);
+    font-size: 0.85em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-product .sizes .variant form p input:checked+label::before {
+    background-color: var(--second-dark-color);
+    opacity: 1;
+}
+
+/*actions*/
+.products .actions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+/* control cantidad*/
+.products .qty-control {
+    width: fit-content;
+    padding: 0.5em;
+    border: 1px solid var(--border-color);
+    margin: 0 2em 2em 0;
+}
+
+.products .actions :where(input, button) {
+    font-size: 1.25em;
+    outline: 0;
+    border: 0;
+}
+
+.products .actions input {
+    width: 50px;
+    text-align: center;
+}
+
+.products .qty-control button::before {
+    background-color: transparent;
+}
+
+/*carrito*/
+.products .actions .buttom-cart {
+    flex: 1;
+    min-width: 200px;
+}
+
+.products .actions .buttom-cart button {
+    width: var(--porcentaje100);
+   cursor: pointer;
+}
+
+/*informacion del producto*/
+.products .collapse .has-child >a {
+position: relative;
+font-weight: var(--fw7);
+text-transform: uppercase;
+padding: 1em 1.25em;
+border-top: 1px solid var(--border-color);
+}
+
+.products .collapse .has-child >a::before {
+    content: "+";
+    position: absolute;
+    left: 0;
+
+}
+.products .collapse .content {
+    margin: 0 0 1.5em 2em;
+    font-size: var(--font-small);
+}
+
+.products .collapse .content li span:first-child {
+    min-width: 100px;
+    display: inline-flex;
+    font-weight: var(--fw7);
+    text-transform: uppercase;
+}
+
+/*tabla*/
+.products .collapse table {
+    line-height: 3em;
+}
+
+.products .collapse table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid var(--second-dark-color);
+    padding-left: 1em;
+}
+
+.products .collapse table :where(th,td) {
+    border-bottom: 1px solid var(--border-color);
+    padding-left: 2em;
+}
+
+/*para que el estilo de expanda o no */
+.products .collapse .content {
+    display: none;
+}
+
+.products .collapse .expand .content {
+    display: flex;
+}
+
+.products .collapse .expand > a::before {
+    content: '-';
+}
 
 
 /*medias responsive*/
@@ -111,6 +332,14 @@
 
     }*/
 
+}
+
+/**/
+@media(min-width:768px) {
+  .products.one .is_sticky, .is_sticky {
+    position: sticky;
+    top: 2em;
+  }
 }
 
 /*fin*/

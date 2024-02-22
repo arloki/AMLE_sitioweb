@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--link del favicon -->
     <link rel="icon" href="/img/amle_logo2.jpeg" type="image/x-icon">
+    <!--link del slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--link del fontawesome-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
     <!--link del css-->
     <link rel="stylesheet" href="css/estilos-tienda.css">
+    <link rel="stylesheet" href="css/estilos-categoria.css">
     <title>AMLEMALL</title>
 </head>
 
 <body>
 
-    <div id="page" class="site page-home">
+    <div id="page" class="site page-category">
 
         <!--menu responsive-->
         <aside class="site-off desktop-hide">
@@ -72,9 +75,8 @@
             </div>-->
             <!--fin-->
             <!--header navegador-->
-
             <div class="header-nav">
-                <div class="container">
+                <div class="container-tienda">
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><i class='bx bx-menu'></i></a>
                         <div class="left flexitem"></div>
@@ -127,8 +129,9 @@
                                 <div class="dpt-head">
                                     <div class="main-text">Departamentos</div>
                                     <div class="mini-text mobile-hide">Total</div>
-                                    <a href="" class="dtp-trigger mobile-hide">
+                                    <a href="#" class="dtp-trigger mobile-hide">
                                         <i class='bx bx-menu-alt-left'></i>
+                                        <i class="ri-close-fill"></i>
 
                                     </a>
                                 </div>
@@ -261,221 +264,192 @@
         </header>
         <!--fin-->
 
-        <!--pequeña imagen decorativa-->
-        <section>
-            <!--slider-->
-            <div class="slider">
+        <!--categoria por departamento-->
+        <main>
+            <div class="single-category">
                 <div class="container">
                     <div class="wrapper">
-                        <div class="myslider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="item">
+                        <div class="column">
+                            <div class="holder">
+                                <div class="row sidebar">
 
-                                        <div class="image object-cover">
-                                            <img src="img-tienda/layo1ut.png" alt="">
+                                    <!--filtro-->
+                                    <div class="filter">
+
+                                        <div class="filter-block">
+                                            <h4>Categoria</h4>
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="hilos">
+                                                    <label for="hilos">
+                                                        <span class="checked"></span>
+                                                        <span>hilos</span>
+                                                    </label>
+                                                    <span class="count">10</span>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="telas">
+                                                    <label for="telas">
+                                                        <span class="checked"></span>
+                                                        <span>telas</span>
+                                                    </label>
+                                                    <span class="count">10</span>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="zipper">
+                                                    <label for="zipper">
+                                                        <span class="checked"></span>
+                                                        <span>zipper</span>
+                                                    </label>
+                                                    <span class="count">10</span>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="elasticos">
+                                                    <label for="elasticos">
+                                                        <span class="checked"></span>
+                                                        <span>elasticos</span>
+                                                    </label>
+                                                    <span class="count">10</span>
+                                                </li>
+                                            </ul>
                                         </div>
+
+                                        <div class="filter-block">
+                                            <h4>Categoria</h4>
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="hilos">
+                                                    <label for="hilos">
+                                                        <span class="checked"></span>
+                                                        <span>hilos</span>
+                                                    </label>
+                                                    <span class="count">10</span>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="telas">
+                                                    <label for="telas">
+                                                        <span class="checked"></span>
+                                                        <span>telas</span>
+                                                    </label>
+                                                    <span class="count">10</span>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="zipper">
+                                                    <label for="zipper">
+                                                        <span class="checked"></span>
+                                                        <span>zipper</span>
+                                                    </label>
+                                                    <span class="count">10</span>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="elasticos">
+                                                    <label for="elasticos">
+                                                        <span class="checked"></span>
+                                                        <span>elasticos</span>
+                                                    </label>
+                                                    <span class="count">10</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="filter-block">
+                                            <h4>Categoria</h4>
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="hilos">
+                                                    <label for="hilos">
+                                                        <span class="checked"></span>
+                                                        <span>hilos</span>
+                                                    </label>
+                                                    <span class="count">10</span>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="telas">
+                                                    <label for="telas">
+                                                        <span class="checked"></span>
+                                                        <span>telas</span>
+                                                    </label>
+                                                    <span class="count">10</span>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="zipper">
+                                                    <label for="zipper">
+                                                        <span class="checked"></span>
+                                                        <span>zipper</span>
+                                                    </label>
+                                                    <span class="count">10</span>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" name="checkbox" id="elasticos">
+                                                    <label for="elasticos">
+                                                        <span class="checked"></span>
+                                                        <span>elasticos</span>
+                                                    </label>
+                                                    <span class="count">10</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <!--color y no se-->
+                                        <div class="filter-block prouducts">
+                                            <h4>color</h4>
+                                            <ul class="bycolor variant flexitem">
+                                                <li>
+                                                    <input type="radio" name="color" id="codgrey">
+                                                    <label for="codgrey" class="circle"></label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="radio" name="color" id="codblue">
+                                                    <label for="codblue" class="circle"></label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="radio" name="color" id="codpink">
+                                                    <label for="codpink" class="circle"></label>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <!--fin-->
+
+                                        <!--princing-->
+                                        <div class="filter-block">
+                                            <div class="princing">
+                                                <h4>Price</h4>
+                                                <div class="byprice">
+                                                    <div class="range-trank">
+                                                        <input type="range" value="25000" min="0" max="10000">
+                                                    </div>
+                                                </div>
+                                                <div class="prince-range">
+                                                    <span class="prince-form">$50</span>
+                                                    <span class="prince-to">$500</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--fin-->
+
                                     </div>
+                                    <!--fin-->
                                 </div>
+                                <div class="section"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!--fin-->
-        </section>
-        <!--fin-->
-
-        <!--galeria de categoria-->
-        <main class="productos">
-
-            <div class="sectop flexitem">
-                <h2><span class="circle"></span><span>Categorías</span></h2>
-            </div>
-
-            <div class="producto_center">
-
-                <!--maquinas-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/maquina jack.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="">
-                            <h2>Máquinas jack y Feiya</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--piezas y partes jack-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/piezas jack.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="">
-                            <h2>Piezas y partes Jack</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--mesas, piezas, partes genericas-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/pieza generica mesa.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="">
-                            <h2>Mesas, piezas, partes genéricas</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--agujas groz-beckert-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/agujas groz.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="">
-                            <h2>Agujas Groz-Beckert</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--equipos-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/maquinaria.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="">
-                            <h2>Equipos y Maquinarias</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--insumos y acesorios-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/insumo e accesorios.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="">
-                            <h2>Insumos y accesorios</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--maquinas de corte y tijeras-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/maquina de corte.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="">
-                            <h2>Máquinas de corte y tijeras</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--pruductos AMLE-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/productos/hilos.png" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="">
-                            <h2>Costura y Confección</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--cintas y encaje-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/cintas y encaje.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="">
-                            <h2>Cintas y encaje</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--prendas-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/prendas.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="">
-                            <h2>Prendas</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
             </div>
         </main>
         <!--fin-->
-
-        <!--banners--> 
-
-        <div class="banners">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="column">
-                        <div class="banner flexwrap">
-                            <div class="row">
-
-                                <div class="item get-color2">
-
-                                    <div class="image">
-                                        <img src="img-tienda/banner1.5.jpg" alt="">
-                                    </div>
-
-                                    <div class="text-content flexcol">
-                                        <h4>Compra ya!</h4>
-                                        <h3><span>Artículos de Confección </span><br>De alta calidad</h3>
-                                    </div>
-                                    <a href="#" class="over-link"></a>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="item get-color">
-
-                                    <div class="image">
-                                        <img src="img-tienda/banner2.5.jpg" alt="">
-                                    </div>
-
-                                    <div class="text-content flexcol">
-                                        <h4>Compra ya!</h4>
-                                        <h3><span>Consigue las mejores</span><br>Máquinas jack</h3>
-                                    </div>
-                                    <a href="#" class="over-link"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-
-        <!--fin-->
-
-
 
         <!--footer-->
         <footer class="footer">
@@ -539,6 +513,10 @@
     <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
     <!--js de la pagina-->
     <script src="js/script-tienda.js"></script>
+    <!--js del fslightbox-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
+    <!--js del swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>

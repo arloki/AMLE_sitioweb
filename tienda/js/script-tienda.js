@@ -49,6 +49,15 @@ function toggle(e) {
     this.closest('.has-child').classList.toggle('expand');
 }
 
+//swiper para que funcione 
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+  });
+
 
 // Show dpt menu 
 const dptButton = document.querySelector('.dpt-cat .dtp-trigger');
@@ -59,7 +68,7 @@ dptButton.addEventListener('click', function () {
 });
 
 
-//image product slider
+//image product slider de la pagina de detalle producto
 var productThumb = new Swiper('.small-image', {
     loop: true,
     spaceBetween: 10,

@@ -127,8 +127,8 @@
                         <div class="left">
                             <div class="dpt-cat">
                                 <div class="dpt-head">
-                                    <div class="main-text">All categories</div>
-                                    <div class="mini-text mobile-hide">Total???</div>
+                                    <div class="main-text">Departamentos</div>
+                                    <div class="mini-text mobile-hide">Total</div>
                                     <a href="#" class="dtp-trigger mobile-hide">
                                         <i class='bx bx-menu-alt-left'></i>
                                         <i class="ri-close-fill"></i>
@@ -264,6 +264,7 @@
         </header>
         <!--fin-->
 
+        <!--detalle del producto-->
         <main>
             <div class="single-product">
                 <div class="container">
@@ -280,12 +281,12 @@
                             <div class="products one">
                                 <div class="flexwrap">
                                     <div class="row">
-                                        <div class="item">
+                                        <div class="item is_sticky">
 
                                             <div class="big-image">
                                                 <div class="big-image-wrapper swiper-wrapper">
-                                                    <div class="image-show swiper-slide">
 
+                                                    <div class="image-show swiper-slide">
                                                         <a data-fslightbox href="img-tienda/productos/hilos.png"><img
                                                                 src="img-tienda/productos/hilos.png" alt=""></a>
                                                     </div>
@@ -324,14 +325,152 @@
                                             <div class="content">
 
                                                 <!--raiting de resenas-->
-                                                <div class="raiting">
+                                                 <!--<div class="raiting">
                                                     <div class="stars"></div>
-                                                    <a href="" class="mini-text"></a>
-                                                    <a href=""class="add-rewind mini-text"></a> 
-                                                </div>
-                                                <!--fin--> 
+                                                    <a href="" class="mini-text">2,039 reseñas</a>
+                                                    <a href="" class="add-rewind mini-text">añade tu reseña</a>
+                                                </div>-->
+                                                <!--fin-->
 
-                                                
+                                                <!--stock-->
+                                                <div class="stock-skun">
+                                                    <span class="avialable">In stock</span>
+                                                    <span class="sku mini-text">Sk8-881</span>
+                                                </div>
+                                                <!--fin-->
+
+                                                <!--precio-->
+                                                <div class="price">
+                                                    <span class="current">$80.00</span>
+                                                    <span class="normal">$100.00</span>
+                                                </div>
+                                                <!--fin-->
+
+                                                <!--color-->
+                                                <div class="colors">
+                                                    <p>Color</p>
+                                                    <div class="variant">
+                                                        <form action="">
+                                                            <p>
+                                                                <input type="radio" name="color" id="codgrey">
+                                                                <label for="codgrey" class="circle"></label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="radio" name="color" id="codblue">
+                                                                <label for="codblue" class="circle"></label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="radio" name="color" id="codpink">
+                                                                <label for="codpink" class="circle"></label>
+                                                            </p>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <!--fin-->
+
+                                                <!--size-->
+                                                <div class="sizes">
+                                                    <p>Sizes</p>
+                                                    <div class="variant">
+                                                        <form action="">
+                                                            <p>
+                                                                <input type="radio" name="size" id="size-S">
+                                                                <label for="size-S"
+                                                                    class="circle"><span>S</span></label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="radio" name="size" id="size-M">
+                                                                <label for="size-M"
+                                                                    class="circle"><span>M</span></label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="radio" name="size" id="size-L">
+                                                                <label for="size-L"
+                                                                    class="circle"><span>L</span></label>
+                                                            </p>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <!--fin-->
+
+                                                <!--control de cantidad-->
+                                                <div class="actions">
+                                                    <!--cantidad-->
+                                                    <div class="qty-control flexitem">
+                                                        <button class="minus circle">-</button>
+                                                        <input type="text" value="1">
+                                                        <button class="plus circle">+</button>
+                                                    </div>
+
+                                                    <!--carrito-->
+                                                    <div class="buttom-cart">
+                                                        <buttom class="primary-button">Añadir al carrito</buttom>
+                                                    </div>
+
+                                                </div>
+                                                <!--fin-->
+
+                                                <!--informacion general-->
+                                                <div class="descripcion collapse">
+                                                    <ul>
+                                                        <li class="has-child expand">
+                                                            <a href="#" class="icon-small">Informacion</a>
+                                                            <ul class="content">
+                                                                <li><span>Brand: NIke</span></li>
+                                                                <li><span>Brand: NIke</span></li>
+                                                                <li><span>Brand: NIke</span></li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li class="has-child">
+                                                            <a href="#" class="icon-small">detalles</a>
+                                                            <div class="content">
+                                                                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Velit fugiat distinctio, 
+                                                                   <br> ipsa consequuntur amet accusamus <br> ipsum rem impedit temporibus possimus eveniet. <br> </p>
+                                                            </div>
+
+                                                        </li>
+
+                                                        <li class="has-child"> <!--tabla de informacion-->
+                                                            <a href="#" class="icon-small">custom</a>
+                                                            <div class="content">
+                                                                <table>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>size</th>
+                                                                            <th>busto<span class="mini-text">(cm)</span></th>
+                                                                            <th>pecho<span class="mini-text">(cm)</span></th>
+                                                                            <th>waist<span class="mini-text">(cm)</span></th>
+                                                                            
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>S</td>
+                                                                            <td>12cm</td>
+                                                                            <td>23cm</td>
+                                                                            <td>23cm</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>M</td>
+                                                                            <td>23cm</td>
+                                                                            <td>23cm</td>
+                                                                            <td>23cm</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>L</td>
+                                                                            <td>25cm</td>
+                                                                            <td>23cm</td>
+                                                                            <td>23cm</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -342,16 +481,17 @@
                     </div>
                 </div>
             </div>
+            <!--fin-->
 
 
             <!--productos recomendados-->
-            <!-- <div class="productos">
+             <div class="productos">
                 <div class="sectop flexitem">
                 <h2><span class="circle"></span><span>Recomendados</span></h2>
             </div>
-                <div class="producto_center">-->
+                <div class="producto_center">
 
-            <!--maquinas jack
+            <!--maquinas jack-->
                     <div class="producto">
                         <div class="img_container">
                             <img src="img-tienda/productos/maquina-jack.png" alt="">
@@ -365,9 +505,9 @@
                                 <a href="#" class="btn view"> Vista</a>
                             </div>
                         </div>
-                    </div>-->
+                    </div>
 
-            <!--maquinas feiya
+            <!--maquinas feiya-->
                     <div class="producto">
                         <div class="img_container">
                             <img src="img-tienda/productos/maquina-jack.png" alt="">
@@ -381,12 +521,12 @@
                                 <a href="#" class="btn view"> Vista</a>
                             </div>
                         </div>
-                    </div>-->
+                    </div>
 
             <!--fin-->
 
             <!--piezas y partes jack-->
-            <!--hook dientes y planchuelas
+            <!--hook dientes y planchuelas-->
                     <div class="producto">
                         <div class="img_container">
                             <img src="img-tienda/productos/maquina-jack.png" alt="">
@@ -400,9 +540,9 @@
                                 <a href="#" class="btn view"> Vista</a>
                             </div>
                         </div>
-                    </div>-->
+                    </div>
 
-            <!--looper,cuchillas, otros
+            <!--looper,cuchillas, otros-->
                     <div class="producto">
                         <div class="img_container">
                             <img src="img-tienda/productos/maquina-jack.png" alt="">
@@ -416,9 +556,9 @@
                                 <a href="#" class="btn view"> Vista</a>
                             </div>
                         </div>
-                    </div>-->
+                    </div>
 
-            <!--partes electronicas
+            <!--partes electronicas-->
                     <div class="producto">
                         <div class="img_container">
                             <img src="img-tienda/productos/maquina-jack.png" alt="">
@@ -432,13 +572,12 @@
                                 <a href="#" class="btn view"> Vista</a>
                             </div>
                         </div>
-                    </div>-->
+                    </div>
             <!--fin-->
     </div>
     </div>
     </main>
     <!--fin-->
-
 
     <!--footer-->
     <footer class="footer">
@@ -504,6 +643,8 @@
     <script src="js/script-tienda.js"></script>
     <!--js del fslightbox-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
+    <!--js del swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
