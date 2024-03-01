@@ -1,0 +1,307 @@
+/*breadcrumb linea de arriba*/
+.breadcrumb {
+    font-size: var(--font-small);
+    margin-bottom: 2em;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: '/';
+    padding: 0 0.35em;
+}
+
+.breadcrumb li:last-child {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--light-text-color);
+}
+
+/*filtro*/
+.filter-block {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+.filter-block:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filter-block h4 {
+    font-size: 1.25em;
+    margin-bottom: .5em;
+}
+
+.filter-block li {
+    display: flex;
+    font-size: 0.9em;
+    position: relative;
+    line-height: 2;
+}
+
+.filter-block label .checked {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    line-height: 0;
+    display: inline-block;
+    border: 2px solid var(--second-dark-color);
+    vertical-align: text-top;
+    margin: 0 7px 0 0;
+    cursor: pointer;
+}
+
+.filter-block label .checked::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--second-dark-color);
+    top: 2px;
+    left: 2px;
+    opacity: 0;
+}
+
+.filter-block input:checked+label .checked::before {
+    opacity: 1;
+}
+
+.filter-block li .count {
+    margin-left: auto;
+    color: var(--light-text-color);
+}
+
+/*color*/
+.filter-block :where(.variant, .actions) .circle {
+    display: block;
+    position: static;
+    top: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*para que se vea bonito el check*/
+:where(.products, .variant, .filter-block:not(.pricing)) input {
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+
+.filter-block .variant label::before {
+    opacity: 1;
+}
+
+/*para que se vea el color*/
+.bycolor label[for="codgrey"]::before {
+    background-color: var(--primary-color);
+}
+
+/*para que se vea el color*/
+.bycolor label[for="codblue"]::before {
+    background-color: #b14444;
+}
+
+/*para que se vea el color*/
+.bycolor label[for="codpink"]::before {
+    background-color: #7248aa;
+}
+
+/*borde*/
+.bycolor input:checked+label {
+    background-color: transparent;
+    border: 2px solid var(--second-dark-color);
+}
+
+/*rango de precio*/
+input[type="range"] {
+    -webkit-appearance: none;
+    width: var(--porcentaje100);
+}
+
+input[type="range"]:focus {
+    outline: 0;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background-color: var(--border-color);
+    box-shadow: none;
+    border: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    z-index: 2;
+    position: relative;
+    height: 18px;
+    width: 14px;
+    background-color: var(--primary-color);
+    -webkit-appearance: none;
+    margin-top: -7px;
+}
+
+/*no recuerdo para que es*/
+.byprice .prince-range {
+    display: flex;
+    justify-content: space-between;
+    color: var(--light-text-color);
+    margin-top: 0.5em;
+}
+
+/*Categoria*/
+.single-category .holder {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-category .sidebar,
+.single-category .section {
+    flex: 1 0 100%;
+}
+
+/*cabeza de la categoria*/
+.page-title {
+    margin-bottom: 2em;
+}
+
+.cat-descripcion p {
+    font-weight: var(--fw3);
+    font-size: 0.9em;
+}
+
+/*dentro de la cabeza de la categoria filtro*/
+.cat-navigation {
+    font-size: 0.85em;
+    margin: 2em 0;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.cat-navigation .item-filter {
+    margin-right: auto;
+}
+
+.cat-navigation>div {
+    position: relative;
+}
+
+.cat-navigation .item-filter a {
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.cat-navigation ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    min-width: var(--porcentaje100);
+    width: max-content;
+    z-index: 10;
+}
+
+.cat-navigation .label,
+.cat-navigation ul li {
+    display: flex;
+    gap: 0.5em;
+    padding: 0.5em 1em;
+    transition: var(--trans-color);
+}
+
+:where(.item-sortir, .item-options) .label,
+.cat-navigation ul {
+    color: var(--light-text-color);
+    background-color: #f2f3f5;
+    cursor: pointer;
+}
+
+.cat-navigation :where(label, ul li):hover {
+    color: var(--dark-color);
+}
+
+:where(.item-sortir, .item-options):hover ul {
+    display: block;
+}
+
+/*cargar mas*/
+.load-more {
+    margin: 2em 0 4em;
+}
+
+/*filtro para movil*/
+.filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 2em;
+    max-width: 400px;
+    width: 90%;
+    background-color: var(--white-color);
+    overflow: auto;
+    z-index: 1000;
+    box-shadow: rgb(0 0 0 / 30%) 30px 0 10px 50px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/*para que el filtro se vea para max-width 950*/
+.filter.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*productos*/
+.products.main .producto_center {
+    padding: 0 3em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Se crean 4 columnas, cada una con igual fracción del espacio disponible */
+    gap: 10px;
+}
+
+.products.main .btn {
+    display: inline-block;
+    border: 1px solid #e5e8ec;
+    padding: 0.5em 0.5em;
+    color: #0a021c;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all 300ms ease-in-out;
+}
+
+.products.main .btn:hover {
+    background-color: #78ac7e;
+    color: white;
+}
+
+@media screen and (min-width: 992px) {
+
+    /*pagina de la categoria*/
+    .single-category .holder {
+        flex-direction: row;
+    }
+
+    .single-category .sidebar {
+        flex: 1 0 25%;
+    }
+
+    .single-category .section {
+        flex: 1 0 75%;
+    }
+
+    .single-category .sidebar .filter {
+        padding: 0 1.5em 0 0;
+        position: sticky;
+        top: 2em;
+        box-shadow: none;
+        width: var(--porcentaje100);
+        z-index: initial;
+        visibility: visible;
+        opacity: 1;
+    }
+}
