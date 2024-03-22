@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--link del favicon -->
     <link rel="icon" href="/img/amle_logo2.jpeg" type="image/x-icon">
+    <!--link del slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--link del fontawesome-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
     <!--link del css-->
     <link rel="stylesheet" href="css/estilos-tienda.css">
+    <link rel="stylesheet" href="css/estilos-cart-checkout.css">
     <title>AMLEMALL</title>
 </head>
 
 <body>
 
-    <div id="page" class="site page-home">
+    <div id="page" class="site page-cart">
 
         <!--menu responsive-->
         <aside class="site-off desktop-hide">
@@ -72,13 +75,12 @@
             </div>-->
             <!--fin-->
             <!--header navegador-->
-
             <div class="header-nav">
-                <div class="container">
+                <div class="container-tienda">
                     <div class="wrapper flexitem">
                         <a href="#" class="trigger desktop-hide"><i class='bx bx-menu'></i></a>
                         <div class="left flexitem"></div>
-                        <div class="logo"><a href="#">AMLE</a></div>
+                        <div class="logo"><a href="/tienda/tienda.html">AMLE</a></div>
                         <nav class="mobile-hide">
                             <ul class="flexitem second-links">
                                 <li><a href="/index.html">Inicio</a></li>
@@ -97,7 +99,7 @@
                                         <div class="fly-item"><span class="item-number">0</span></div>-->
                                     </a></li>
 
-                                <li><a href="#" class="iscart">
+                                <li class="iscart"><a href="#">
                                         <div class="icon-large">
                                             <i class="bx bx-cart"></i>
                                             <div class="fly-item"><span class="item-number">0</span></div>
@@ -108,7 +110,7 @@
                                         </div>-->
 
                                     </a>
-                                    <div class="mini-cart">
+                                     <div class="mini-cart">
                                         <div class="content">
                                             <div class="cart-head">
                                                 3 articulos en el carrito
@@ -171,10 +173,6 @@
                                         </div>
                                     </div>
 
-                                
-                                
-                                
-                                
                                 </li>
                             </ul>
 
@@ -195,8 +193,9 @@
                                 <div class="dpt-head">
                                     <div class="main-text">Departamentos</div>
                                     <div class="mini-text mobile-hide">Total</div>
-                                    <a href="" class="dtp-trigger mobile-hide">
+                                    <a href="#" class="dtp-trigger mobile-hide">
                                         <i class='bx bx-menu-alt-left'></i>
+                                        <i class="ri-close-fill"></i>
 
                                     </a>
                                 </div>
@@ -212,9 +211,9 @@
                                                 <div class="icon-small"><i class='bx bx-chevron-right'></i></div>
                                             </a>
                                             <ul>
-                                                <li><a href="/tienda/tienda categoria.html">Hook, dientes, planchuelas</a></li>
-                                                <li><a href="/tienda/tienda categoria.html">Looper, cuchillas, otros</a></li>
-                                                <li><a href="/tienda/tienda categoria.html">Partes electrónicas</a></li>
+                                                <li><a href="#">Hook, dientes, planchuelas</a></li>
+                                                <li><a href="#">Looper, cuchillas, otros</a></li>
+                                                <li><a href="#">Partes electrónicas</a></li>
                                             </ul>
                                         </li>
 
@@ -225,20 +224,20 @@
                                                 <div class="icon-small"><i class='bx bx-chevron-right'></i></div>
                                             </a>
                                             <ul>
-                                                <li><a href="/tienda/tienda categoria.html">Máquinas Jack</a></li>
-                                                <li><a href="/tienda/tienda categoria.html">Máquinas Feiya</a></li>
+                                                <li><a href="#">Máquinas Jack</a></li>
+                                                <li><a href="#">Máquinas Feiya</a></li>
                                             </ul>
                                         </li>
 
                                         <li>
-                                            <a href="/tienda/tienda categoria.html">
+                                            <a href="">
                                                 <div class="icon-large"><i class='bx bx-table'></i></div>
                                                 Mesas, piezas, partes genéricas
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/tienda/tienda categoria.html">
+                                            <a href="">
                                                 <div class="icon-large"><i class="ri-thermometer-line"></i></div>
                                                 Agujas Groz-Beckert
                                             </a>
@@ -251,21 +250,21 @@
                                                 <div class="icon-small"><i class='bx bx-chevron-right'></i></div>
                                             </a>
                                             <ul>
-                                                <li><a href="/tienda/tienda categoria.html">Equipos y maquinarias</a></li>
-                                                <li><a href="/tienda/tienda categoria.html">Equipos y mobiliarios</a></li>
-                                                <li><a href="/tienda/tienda categoria.html">Equipo de planchado</a></li>
+                                                <li><a href="#">Equipos y maquinarias</a></li>
+                                                <li><a href="#">Equipos y mobiliarios</a></li>
+                                                <li><a href="#">Equipo de planchado</a></li>
                                             </ul>
                                         </li>
 
                                         <li>
-                                            <a href="/tienda/tienda categoria.html">
+                                            <a href="">
                                                 <div class="icon-large"><i class='bx bx-candles'></i></div>
                                                 Insumos y accesorios
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/tienda/tienda categoria.html">
+                                            <a href="">
                                                 <div class="icon-large"><i class="ri-scissors-fill"></i></div>
                                                 Máquinas de corte y tijeras
                                             </a>
@@ -278,10 +277,10 @@
                                                 <div class="icon-small"><i class='bx bx-chevron-right'></i></div>
                                             </a>
                                             <ul>
-                                                <li><a href="/tienda/tienda categoria.html">Hilos AMLE</a></li>
-                                                <li><a href="/tienda/tienda categoria.html">Zipper AMLE</a></li>
-                                                <li><a href="/tienda/tienda categoria.html">Elástico AMLE</a></li>
-                                                <li><a href="/tienda/tienda categoria.html">Telas AMLE</a></li>
+                                                <li><a href="#">Hilos AMLE</a></li>
+                                                <li><a href="#">Zipper AMLE</a></li>
+                                                <li><a href="#">Elástico AMLE</a></li>
+                                                <li><a href="#">Telas AMLE</a></li>
                                             </ul>
                                         </li>
 
@@ -293,16 +292,16 @@
                                         </li>
 
                                         <li class="has-child Prendas">
-                                            <a href="/tienda/tienda categoria.html">
+                                            <a href="">
                                                 <div class="icon-large"><i class="ri-shirt-line"></i></div>
                                                 Prendas
                                                 <div class="icon-small"><i class='bx bx-chevron-right'></i></div>
                                             </a>
                                             <ul>
-                                                <li><a href="/tienda/tienda categoria.html">Uniformes escolares</a></li>
-                                                <li><a href="/tienda/tienda categoria.html">Ropas Folklore</a></li>
-                                                <li><a href="/tienda/tienda categoria.html">Ropas bebés</a></li>
-                                                <li><a href="tienda categoria.html">Prendas de salud</a></li>
+                                                <li><a href="#">Uniformes escolares</a></li>
+                                                <li><a href="#">Ropas Folklore</a></li>
+                                                <li><a href="#">Ropas bebés</a></li>
+                                                <li><a href="#">Prendas de salud</a></li>
                                             </ul>
                                         </li>
 
@@ -329,277 +328,172 @@
         </header>
         <!--fin-->
 
-        <!--pequeña imagen decorativa-->
-        <section>
-            <!--slider-->
-            <div class="slider">
+        <main>
+            <div class="single-checkout">
                 <div class="container">
                     <div class="wrapper">
-                        <div class="myslider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="item">
+                        <div class="checkout flexwrap">
+                            <div class="item left styled">
+                                <h1>Información de la cotización</h1>
+                                <form action="">
+                                    <p>
+                                        <label for="email"> Correo Electronico <span></span></label>
+                                        <input type="email" name="email" autocomplete="off" id="email" required>
+                                    </p>
 
-                                        <div class="image object-cover">
-                                            <img src="img-tienda/layo1ut.png" alt="">
-                                        </div>
+                                    <p>
+                                        <label for="Nombre"> Nombre <span></span></label>
+                                        <input type="text" id="Nombre" required>
+                                    </p>
+
+                                    <p>
+                                        <label for="Direccion"> Direccion <span></span></label>
+                                        <input type="text" id="Direccion" required>
+                                    </p>
+
+                                    <p>
+                                        <label for="telefono"> telefono <span></span></label>
+                                        <input type="number" id="telefono" required>
+                                    </p>
+
+                                    <p>
+                                        <label>Informacion adicional</label>
+                                        <textarea cols="50" rows="5"></textarea>
+                                    </p>
+
+                                    <!--<p class="checkset">
+                                        <input type="checkbox" id="anaccount">
+                                        <label for="anaccount">Crea una cuenta</label>
+                                    </p>-->
+                                </form>
+                                <div class="primary-checkout">
+                                    <button class="primary-button">Enviar cotización</button>
+                                </div>
+                            </div>
+                            <div class="item right">
+                                <h2>Resumen de la cotización</h2>
+                                <div class="summary-order is_sticky">
+                                    <div class="summary-total">
+                                        <ul>
+                                            <li>
+                                                <span>subtotal</span>
+                                                <span>0.00$</span>
+                                            </li>
+                                            <li>
+                                                <span>Descuento</span>
+                                                <span>0.00$</span>
+                                            </li>
+                                            <li>
+                                                <span>Total</span>
+                                                <strong>0.00$</strong>
+                                            </li>
+                                        </ul>
                                     </div>
+                                    <ul class="products mini">
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="img-tienda/productos/hilos.png" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>maquina-jack</p>
+                                                <span class="price">
+                                                    <span>0.00$</span>
+                                                    <span>x2</span>
+                                                </span>
+                                            </div>
+                                        </li>
+
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="img-tienda/productos/hilos.png" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>maquina-jack</p>
+                                                <span class="price">
+                                                    <span>0.00$</span>
+                                                    <span>x2</span>
+                                                </span>
+                                            </div>
+                                        </li>
+
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="img-tienda/productos/hilos.png" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>maquina-jack</p>
+                                                <span class="price">
+                                                    <span>0.00$</span>
+                                                    <span>x2</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
+    </div>
+    </main>
 
-            <!--fin-->
-        </section>
-        <!--fin-->
+    <!--footer-->
+    <footer class="footer">
 
-        <!--galeria de categoria-->
-        <main class="productos">
+        <div class="container-footer">
 
-            <div class="sectop flexitem">
-                <h2><span class="circle"></span><span>Categorías</span></h2>
+            <div class="footer-row">
+
+                <div class="footer-links">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/nosotros.html">Nosotros</a></li>
+                        <li><a href="/perfil.html">Perfil</a></li>
+                        <li><a href="/politicas.html">Políticas</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:info@amlemall.com" target="_blank">Formulario de contacto</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=18097368991" target="_blank"> Escríbenos a
+                                WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Catálogo</h4>
+                    <ul>
+                        <li><a href="/tienda/tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Redes sociales</h4>
+                    <div class="iconos-footer">
+                        <a href="https://www.instagram.com/amlemall/" target="_blank"><i
+                                class='bx bxl-instagram'></i></a>
+                        <a href="https://www.facebook.com/Amle-Mall-149139772386509" target="_blank"><i
+                                class='bx bxl-facebook-circle'></i></a>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="producto_center">
-
-                <!--maquinas-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/maquina jack.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="/tienda/tienda categoria.html">
-                            <h2>Máquinas jack y Feiya</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--piezas y partes jack-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/piezas jack.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="/tienda/tienda categoria.html">
-                            <h2>Piezas y partes Jack</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--mesas, piezas, partes genericas-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/pieza generica mesa.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="/tienda/tienda categoria.html">
-                            <h2>Mesas, piezas, partes genéricas</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--agujas groz-beckert-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/agujas groz.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="/tienda/tienda categoria.html">
-                            <h2>Agujas Groz-Beckert</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--equipos-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/maquinaria.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="/tienda/tienda categoria.html">
-                            <h2>Equipos y Maquinarias</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--insumos y acesorios-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/insumo e accesorios.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="/tienda/tienda categoria.html">
-                            <h2>Insumos y accesorios</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--maquinas de corte y tijeras-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/maquina de corte.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="/tienda/tienda categoria.html">
-                            <h2>Máquinas de corte y tijeras</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--pruductos AMLE-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/productos/hilos.png" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="/tienda/tienda categoria.html">
-                            <h2>Costura y Confección</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--cintas y encaje-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/cintas y encaje.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="/tienda/tienda categoria.html">
-                            <h2>Cintas y encaje</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-
-                <!--prendas-->
-                <div class="producto">
-                    <div class="img_container">
-                        <img src="img-tienda/prendas.jpg" alt="">
-                    </div>
-                    <div class="producto_footer">
-                        <a href="/tienda/tienda categoria.html">
-                            <h2>Prendas</h2>
-                        </a>
-                    </div>
-                </div>
-                <!--fin-->
-            </div>
-        </main>
-        <!--fin-->
-
-        <!--banners--> 
-
-        <div class="banners">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="column">
-                        <div class="banner flexwrap">
-                            <div class="row">
-
-                                <div class="item get-color2">
-
-                                    <div class="image">
-                                        <img src="img-tienda/banner1.5.jpg" alt="">
-                                    </div>
-
-                                    <div class="text-content flexcol">
-                                        <h4>Compra ya!</h4>
-                                        <h3><span>Artículos de Confección </span><br>De alta calidad</h3>
-                                    </div>
-                                    <a href="#" class="over-link"></a>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="item get-color">
-
-                                    <div class="image">
-                                        <img src="img-tienda/banner2.5.jpg" alt="">
-                                    </div>
-
-                                    <div class="text-content flexcol">
-                                        <h4>Compra ya!</h4>
-                                        <h3><span>Consigue las mejores</span><br>Máquinas jack</h3>
-                                    </div>
-                                    <a href="#" class="over-link"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    
 
+        <!--copyright-->
+        <div class="footer-bottom">
+            <p>CopyRight &copy;2023; <span class="span-copy">AMLEMALL</span></p>
+        </div>
         <!--fin-->
-
-
-
-        <!--footer-->
-        <footer class="footer">
-
-            <div class="container-footer">
-
-                <div class="footer-row">
-
-                    <div class="footer-links">
-                        <h4>Compañía</h4>
-                        <ul>
-                            <li><a href="/index.html">Inicio</a></li>
-                            <li><a href="/nosotros.html">Nosotros</a></li>
-                            <li><a href="/perfil.html">Perfil</a></li>
-                            <li><a href="/politicas.html">Políticas</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-links">
-                        <h4>Contacto</h4>
-                        <ul>
-                            <li><a href="mailto:info@amlemall.com" target="_blank">Formulario de contacto</a></li>
-                            <li><a href="https://api.whatsapp.com/send/?phone=18097368991" target="_blank"> Escríbenos a
-                                    WhatsApp</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-links">
-                        <h4>Catálogo</h4>
-                        <ul>
-                            <li><a href="#">Tienda</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-links">
-                        <h4>Redes sociales</h4>
-                        <div class="iconos-footer">
-                            <a href="https://www.instagram.com/amlemall/" target="_blank"><i
-                                    class='bx bxl-instagram'></i></a>
-                            <a href="https://www.facebook.com/Amle-Mall-149139772386509" target="_blank"><i
-                                    class='bx bxl-facebook-circle'></i></a>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!--copyright-->
-            <div class="footer-bottom">
-                <p>CopyRight &copy;2023; <span class="span-copy">AMLEMALL</span></p>
-            </div>
-            <!--fin-->
-        </footer>
+    </footer>
     </div>
 
 
@@ -607,6 +501,34 @@
     <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
     <!--js de la pagina-->
     <script src="js/script-tienda.js"></script>
+    <!--js del fslightbox-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
+    <!--js del swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--js del filtro-->
+    <script>
+        const FtoShow = '.filter';
+        const Fpopup = document.querySelector(FtoShow);
+        const Ftrigger = document.querySelector('.filter-trigger');
+
+        Ftrigger.addEventListener('click', () => {
+            setTimeout(() => {
+                if (!Fpopup.classList.contains('show')) {
+                    Fpopup.classList.add('show')
+                }
+            }, 250)
+        });
+
+        //nose xd
+        document.addEventListener('click', (e) => {
+            const isClosest = e.target.closest(FtoShow);
+            if (!isClosest && Fpopup.classList.contains('show')) {
+                Fpopup.classList.remove('show')
+            }
+        })
+
+    </script>
 </body>
 
 </html>

@@ -181,6 +181,20 @@ h4 {
     color: var(--light-text-color);
 }
 
+.object-cover img {
+    position: absolute;
+    object-fit: cover;
+    width: var(--porcentaje100);
+    height: var(--porcentaje100);
+    display: block;
+}
+
+.products .media {
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
 .primary-button {
     font-size: var(--font-small);
     padding: 0.9em 2em;
@@ -573,6 +587,25 @@ form.search button:hover {
 
 /*fin-header*/
 
+/*breadcrumb*/
+.breadcrumb {
+    font-size: var(--font-small);
+    margin-bottom: 2em;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: '/';
+    padding: 0 0.35em;
+}
+
+.breadcrumb li:last-child {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--light-text-color);
+}
+
 
 /*slider*/
 
@@ -781,9 +814,15 @@ form.search button:hover {
     background-color: var(--white-color);
     z-index: 1000;
     box-shadow: rgba(0 0 0 / 30%) 0 10px 50px;
+    opacity: 0;
 }
 
-.mini-cart .products img {
+.iscart:hover .mini-cart {
+    visibility: visible;
+    opacity: 1;
+}
+
+:is(.mini-cart .products, .products.cart, .checkout .products) .thumbnail img {
     transform: none;
 }
 
@@ -814,7 +853,7 @@ form.search button:hover {
     overflow: auto;
 }
 
-.mini-cart .thumbnail {
+:where(.mini-cart, .products.cart, .checkout) .thumbnail {
     position: relative;
     width: 80px;
     height: 80px;
@@ -833,6 +872,21 @@ form.search button:hover {
     margin-left: 1em;
     flex: 1;
     justify-content: flex-end;
+}
+
+.mini-cart .cart-footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    margin-bottom: 2em;
+    border-top: 1px solid var(--border-color);
+}
+
+.mini-cart .actions a {
+    display: block;
+    width: var(--porcentaje100);
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 /*fin*/
@@ -1027,12 +1081,32 @@ form.search button:hover {
         max-height: 373px;
     }
 
+    /*parte del carrito*/
+    .products.cart .form-cart {
+        width: 66%;
+    }
+
+    .products.cart .cart-summary {
+        width: 34%;
+        padding-left: 2.5em;
+        margin-top: 10;
+    }
+
 }
 
-/*parte completamente inecesaria*/
-@media screen and (max-width: 768px) {
+/*para el checkout*/
+@media screen and (min-width: 768px) {
     .products .price .current {
         font-size: 1.25em;
+    }
+
+    .checkout .item {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+
+    .checkout .item.right {
+        padding: 5em 0 0 5em;
     }
 }
 
